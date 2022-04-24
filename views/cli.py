@@ -102,12 +102,12 @@ def remove_element(country, countries_linked_list):
 
 
 def remove_first_element(countries_linked_list):
-    ctlr.remove_first_element(countries_linked_list)
+    country = ctlr.remove_first_element(countries_linked_list)
     print(f"O país {country} foi eliminado da lista.")
     return
 
 
 def remove_last_element(countries_linked_list):
-    ctlr.remove_last_element(countries_linked_list)
+    country = ctlr.remove_last_element(countries_linked_list)
     print(f"O país {country} foi eliminado da lista.")
     return

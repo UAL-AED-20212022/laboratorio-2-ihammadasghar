@@ -48,10 +48,12 @@ def remove_element(country, countries_linked_list):
 
 
 def remove_first_element(countries_linked_list):
+    country = countries_linked_list.start_node.item
     countries_linked_list.delete_at_start()
-    return
+    return country
 
 
 def remove_last_element(countries_linked_list):
+    country = countries_linked_list.get_last_node()
     countries_linked_list.delete_at_end()
-    return
+    return country
