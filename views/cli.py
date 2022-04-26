@@ -12,10 +12,10 @@ def main():
 
         #  Registar País no Início da Lista (RPI):
         if command == "RPI":
-            if len(arguments) == 2:
-                register_element(*arguments, countries_linked_list)
-                continue
             register_at_start(*arguments, countries_linked_list)
+            
+        elif commmand == "RPII":
+            register_element(*arguments, countries_linked_list)
 
         # Registar País no Fim da Lista (RPF):
         elif command == "RPF":
