@@ -19,6 +19,7 @@ def register_at_start(country, countries_linked_list):
     countries_linked_list.insert_at_start(country)
     return
 
+
 def register_at_end(country, countries_linked_list):
     countries_linked_list.insert_at_end(country)
 
@@ -43,8 +44,10 @@ def verify_country_in_list(country, countries_linked_list):
 
 
 def remove_element(country, countries_linked_list):
-    countries_linked_list.delete_element_by_value(country)
-    return
+    if countries_linked_list.search_item(country):
+        countries_linked_list.delete_element_by_value(country)
+        return True
+    return False
 
 
 def remove_first_element(countries_linked_list):

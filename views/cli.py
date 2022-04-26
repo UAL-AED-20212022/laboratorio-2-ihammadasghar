@@ -14,7 +14,8 @@ def main():
         if command == "RPI":
             register_at_start(*arguments, countries_linked_list)
             
-        elif commmand == "RPII":
+        #  Registar País num determinado índice (RPII):
+        elif command == "RPII":
             register_element(*arguments, countries_linked_list)
 
         # Registar País no Fim da Lista (RPF):
@@ -96,8 +97,10 @@ def verify_country_in_list(country, countries_linked_list):
 
 
 def remove_element(country, countries_linked_list):
-    ctlr.remove_element(country, countries_linked_list)
-    print(f"O país {country} foi eliminado da lista.")
+    if ctlr.remove_element(country, countries_linked_list):
+        print(f"O país {country} foi eliminado da lista.")
+        return
+    print(f"O país {country} não se encontra na lista.")
     return
 
 
