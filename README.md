@@ -13,7 +13,10 @@ Add a country at a given index.
 Add a country at the end of the list.
 ### Registar País Depois de outro Elemento já Registado (RPDE): 
 `RPDE country after_country`
-Add a country after another country already in the list.
+Add a country right after another country already in the list.
+### Registar País Antes de outro elemento já registado (RPAE):
+`RPAE country before_country`
+Add a country right before another country already in the list.
 ### Verificar Número de elementos da lista (VNE): 
 `VNE`
 Check the number of the countries in the list.
